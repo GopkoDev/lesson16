@@ -1,6 +1,8 @@
 /* Напишите функцию на JS. Цель: Убрать все объекты с типом additional, а для basic очки уменьшить в двое.
 
-Изменить необходимо исходный массив*/
+Изменить необходимо исходный массив*/ //part1
+
+//Cоздать новый массив, оставляя исходные данные неизменными //part2
 
 let myLesson = [
   {lesson: 1, type: 'basic', points: 2},
@@ -26,11 +28,10 @@ let newMyLesson = []
 myLesson.forEach((el) => {
   el.points /= 2 
   if (el.type == 'basic') newMyLesson.push(el)
-  myLesson = newMyLesson
+  //myLesson = newMyLesson 
 });  
 
 // myLesson.map((item, index, arr) => {
 //  if (item.type == `additional`) arr.splice(index, 1)
 // })
 
-console.log(myLesson);
